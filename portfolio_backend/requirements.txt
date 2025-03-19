@@ -10,4 +10,4 @@ python-dotenv==1.0.1
 sqlparse==0.5.3
 typing_extensions==4.12.2
 whitenoise==6.9.0
-Python==3.12.2
+Python==3.10.12
