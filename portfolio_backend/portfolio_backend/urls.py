@@ -16,11 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.http import HttpResponse
 
+def home_view(request):
+    return HttpResponse("Backend is running...")
 urlpatterns = [
+    path("", home_view),
     path('admin/', admin.site.urls),
     path("api/", include("projects.urls")),
-    path('', include('contact.urls')),
+    path('contact/', include('contact.urls')),
     #path('', include('contact.urls')),
 ]
 
