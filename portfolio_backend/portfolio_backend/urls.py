@@ -19,7 +19,7 @@ from django.urls import path,include
 from django.http import HttpResponse
 
 def home_view(request):
-    return HttpResponse("Backend is running...")
+    return HttpResponse('<h1>Backend is running...</h1><br><a href="/admin/">Go to Admin Panel</a>')
 urlpatterns = [
     path("", home_view),
     path('admin/', admin.site.urls),
