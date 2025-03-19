@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    os.getenv("RENDER_HOST", "your-render-app-name.onrender.com"),
+    os.getenv("RENDER_HOST", "portfolio-backend-k00o.onrender.com"),
     "localhost",
     "127.0.0.1"
 ]
