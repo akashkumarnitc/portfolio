@@ -24,7 +24,7 @@ urlpatterns = [
     path("", home_view),
     path('admin/', admin.site.urls),
     path("api/", include("projects.urls")),
-    path('contact/', include('contact.urls')),
+    path('api/contact/', include('contact.urls')),
     #path('', include('contact.urls')),
 ]
 
